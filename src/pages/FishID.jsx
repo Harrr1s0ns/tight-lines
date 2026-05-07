@@ -74,7 +74,13 @@ export default function FishID({ onNavigateToCollection }) {
         } catch {
           throw new Error('Server error — make sure GEMINI_API_KEY is set in Netlify and redeploy.');
         }
-        if (!res.ok) throw new Error(data.error || 'Unknown error');
+        if (!res.ok) {
+          let msg = data.error || 'Unknown error';
+          if (data.detail) {
+            try { msg = JSON.parse(data.detail)?.error?.message || msg; } catch { msg = data.detail; }
+          }
+          throw new Error(msg);
+        }
         setResult(data);
         setStatus('result');
       } catch (err) {
