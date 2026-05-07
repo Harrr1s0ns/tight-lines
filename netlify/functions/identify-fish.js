@@ -33,7 +33,7 @@ Format:
 If you cannot see a fish clearly, set species to "Unknown" and confidence to "low".
 Use imperial units (inches, lb oz). Be specific — don't say 'various sizes'.`;
 
-  const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
   const geminiBody = {
     contents: [
