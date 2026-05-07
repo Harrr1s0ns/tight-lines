@@ -1,0 +1,16 @@
+{
+  "name": "Tight Lines — UK Fishing Guide",
+  "short_name": "Tight Lines",
+  "description": "UK fishing information app for Kent anglers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#243824",
+  "theme_color": "#243824",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "categories": ["sports", "lifestyle"],
+  "lang": "en-GB"
+}

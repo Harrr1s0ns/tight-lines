@@ -1,0 +1,251 @@
+.hero {
+  background: var(--green-800);
+  padding: 24px 16px 28px;
+}
+
+.heroTitle {
+  font-size: 26px;
+  color: var(--green-50);
+  margin-bottom: 4px;
+}
+
+.heroSub {
+  font-size: 14px;
+  color: var(--green-300);
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Empty state */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 24px;
+  gap: 8px;
+}
+
+.emptyIcon {
+  font-size: 52px;
+  margin-bottom: 4px;
+}
+
+.emptyTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--text-secondary);
+}
+
+.emptySub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.goFishIdBtn {
+  background: var(--green-600);
+  color: var(--green-50);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.goFishIdBtn:hover,
+.goFishIdBtn:active {
+  background: var(--green-500);
+}
+
+/* Card */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 14px;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.cardHeader:hover,
+.cardHeader:active {
+  background: var(--green-50);
+}
+
+.thumbnail {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cardInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cardSpecies {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardMeta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.cardLocation {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.chevron {
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* Edit panel */
+.editPanel {
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--bg-surface);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fieldLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.fieldInput {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  width: 100%;
+  transition: border-color 0.15s;
+  resize: vertical;
+}
+
+.fieldInput:focus {
+  outline: none;
+  border-color: var(--green-400);
+}
+
+/* Edit actions */
+.editActions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.saveBtn {
+  width: 100%;
+  background: var(--green-600);
+  color: var(--green-50);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.saveBtn:hover,
+.saveBtn:active {
+  background: var(--green-500);
+}
+
+.deleteBtn {
+  width: 100%;
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 11px;
+  font-size: 15px;
+  color: var(--red-500);
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.deleteBtn:hover,
+.deleteBtn:active {
+  background: var(--red-100);
+}
+
+.confirmDelete {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--red-100);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--red-500);
+  font-weight: 600;
+}
+
+.confirmDelete span {
+  flex: 1;
+}
+
+.confirmYes {
+  background: var(--red-500);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.confirmNo {
+  background: none;
+  border: 1px solid var(--red-500);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 13px;
+  color: var(--red-500);
+  font-weight: 600;
+}

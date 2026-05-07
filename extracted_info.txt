@@ -1,0 +1,565 @@
+[
+  {
+    "url": "https://www.swimbooker.com/",
+    "name": "Swimbooker",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:03.635Z"
+  },
+  {
+    "url": "https://mouseholelakes.co.uk/",
+    "name": "Mousehole Lakes Carp Fishery – Paddock Wood, Kent",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:06.386Z"
+  },
+  {
+    "url": "https://www.elphicks-fisheries.co.uk/",
+    "name": "Elphicks Fisheries",
+    "pricing": [
+      "VISTITORS AND GUESTS ADULTS £10 A DAY. £20 FOR EVERY 24RS CONCESSIONS AND JUNIORS £5 A DAY £10 FOR EVERY 24HRS NO VISITORS OR GUESTS ON NORTH, PULLENS AND WESTEND",
+      "ADULTS £10 A DAY. £20 FOR EVERY 24RS CONCESSIONS AND JUNIORS £5 A DAY £10 FOR EVERY 24HRS NO VISITORS OR GUESTS ON NORTH, PULLENS AND WESTEND",
+      "£10 A DAY. £20 FOR EVERY 24RS",
+      "£5 A DAY",
+      "£10 FOR EVERY 24HRS"
+    ],
+    "phone": "07897 943 695",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:08.250Z"
+  },
+  {
+    "url": "https://www.hartleylandsfishery.co.uk/",
+    "name": "Hartley Lands Fisher",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:10.039Z"
+  },
+  {
+    "url": "https://www.kstt.co.uk/",
+    "name": "Home",
+    "pricing": null,
+    "phone": "07770513448",
+    "email": "dave@newclaygatelakes.co.ukgoogle",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:11.832Z"
+  },
+  {
+    "url": "https://chequertreefishery.com/",
+    "name": "Chequertree Fishery",
+    "pricing": null,
+    "phone": "01233 820078",
+    "email": "alison@chequertreefishery.com",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:17.106Z"
+  },
+  {
+    "url": "https://www.monklakes.co.uk/",
+    "name": "Monk Lakes",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:18.916Z"
+  },
+  {
+    "url": "https://www.tricklebrookfishery.co.uk/",
+    "name": "Course Fishing Kent",
+    "pricing": null,
+    "phone": "07743955812",
+    "email": "info@tricklebrookfishery.co.uk",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:20.625Z"
+  },
+  {
+    "url": "https://www.manor-fisheries.com/",
+    "name": "Manor Fisheries",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:22.978Z"
+  },
+  {
+    "url": "https://www.frantlakes.com/",
+    "name": "Frant Lakes",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:25.959Z"
+  },
+  {
+    "url": "https://www.greenacresfarmfishery.co.uk/",
+    "name": "Greenacres Farm Fishery",
+    "pricing": [
+      "Specimen 1 Up to 3 rods Day ~ £20 per angler 24hrs - £30 per angler 36hrs - £50 per angler 48hrs - £60 per angler 60hrs - £75 per angler 72hrs - £90 per angler 84hrs - £105 per angler 96hrs - £120 per angler",
+      "Day ~ £20 per angler",
+      "24hrs - £30 per angler",
+      "36hrs - £50 per angler",
+      "48hrs - £60 per angler"
+    ],
+    "phone": "07933 934942",
+    "email": "greenacresfarmfishery@gmail.comHead",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:27.624Z"
+  },
+  {
+    "url": "https://stonesfishinglakes.co.uk/",
+    "name": null,
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": "Request failed with status code 403",
+    "scrapedAt": "2026-04-27T20:56:29.303Z"
+  },
+  {
+    "url": "https://hawkhurstfishfarm.co.uk/",
+    "name": "Hawkhurst Fish Farm",
+    "pricing": null,
+    "phone": "01580 854702",
+    "email": "info@hawkhurstfishfarm.co.uk",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:33.962Z"
+  },
+  {
+    "url": "https://mouseholelakes.co.uk/",
+    "name": "Mousehole Lakes Carp Fishery – Paddock Wood, Kent",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:36.361Z"
+  },
+  {
+    "url": "https://uk-fisheries.co.uk/fisheries/lavender-farm-fishery/",
+    "name": "Lavender Farm Fishery - Kent",
+    "pricing": [
+      "Opening hours are 7am-6pm (last entry 3pm), with pricing set at £10 for adults, £7 for concessions and £5 for children. On both waters pegs close to the car park are available for disabled anglers (reservation available 48hrs+ ahead). Some great pics of the fishery are available here",
+      "with pricing set at £10 for adults",
+      "£7 for concessions and",
+      "£5 for children"
+    ],
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:38.192Z"
+  },
+  {
+    "url": "https://www.coombewoodfishery.com/",
+    "name": "coombewoodfishery",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:39.943Z"
+  },
+  {
+    "url": "https://www.pittlandslakes.co.uk/",
+    "name": "Pittlands Lakes",
+    "pricing": null,
+    "phone": "07716065900",
+    "email": "info@pittlandslakes.co.uk",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:41.667Z"
+  },
+  {
+    "url": "https://www.orchardplacefarmfishing.co.uk/",
+    "name": "Orchard Place Farm Fishing",
+    "pricing": null,
+    "phone": "01892 838576",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:45.829Z"
+  },
+  {
+    "url": "https://eternallake.org/",
+    "name": "Wellbeing in Nature",
+    "pricing": null,
+    "phone": null,
+    "email": "info@eternallake.org",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:48.695Z"
+  },
+  {
+    "url": "https://www.stourvalleyfishingcomplex.co.uk/",
+    "name": "Gallery",
+    "pricing": [
+      "this could be anything up to £100"
+    ],
+    "phone": "07967339152",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:50.681Z"
+  },
+  {
+    "url": "https://www.gabriels-fishery.co.uk/",
+    "name": "Gabriels Fishery",
+    "pricing": null,
+    "phone": "01732 865 3555",
+    "email": "5PPinfo@gabriels-fishery.co.ukCALL",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:52.310Z"
+  },
+  {
+    "url": "https://www.darenthfishingcomplex.com/",
+    "name": "Darenth Fishing Comp",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:54.065Z"
+  },
+  {
+    "url": "https://www.oakspringlake.com/",
+    "name": "Mysite",
+    "pricing": [
+      "One Rod ..... £6.00...per Angler",
+      "Two Rods..... £10.00...per Angler",
+      "One Rod..... £5.00...per Angler",
+      "Two Rods..... £8.00... per Angler",
+      "One Night 6 pm...9am: £10"
+    ],
+    "phone": "07985224264",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:55.873Z"
+  },
+  {
+    "url": "https://sandwichlakes.co.uk/",
+    "name": "Sandwich Lakes",
+    "pricing": [
+      "Fox Bivvy Table £39.99 £39.99Add to basket Quick View",
+      "£39.99",
+      "£",
+      "£39.99Add to basket Quick View",
+      "Fox Avius Camo Black – Brown Lens £24.99 £24.99Add to basket Quick View"
+    ],
+    "phone": "07936 409912",
+    "email": "team@sandwichlakes.co.uk",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:56:58.297Z"
+  },
+  {
+    "url": "https://www.sams-lakes.co.uk/",
+    "name": "Sam's Lakes and caravan site",
+    "pricing": null,
+    "phone": "01233 770272",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:01.883Z"
+  },
+  {
+    "url": "https://www.ddaps.org/",
+    "name": "Home",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:04.129Z"
+  },
+  {
+    "url": "https://country-sports.co/fishing/majors-lakes/",
+    "name": "Country Sports",
+    "pricing": [
+      "Adult day fishing: £100",
+      "24 hour over 18s: £145",
+      "Over 14’s – 18’s £55",
+      "OAP Memberships Discount of £20.00 from any membership",
+      "£100"
+    ],
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:09.099Z"
+  },
+  {
+    "url": "https://springhilltroutwaters.co.uk/",
+    "name": "Springhill Trout Waters",
+    "pricing": null,
+    "phone": "01892 826041",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:10.852Z"
+  },
+  {
+    "url": "https://www.facebook.com/EurekaFisheries/",
+    "name": null,
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": "Request failed with status code 400",
+    "scrapedAt": "2026-04-27T20:57:12.630Z"
+  },
+  {
+    "url": "https://springhilltroutwaters.co.uk/",
+    "name": "Springhill Trout Waters",
+    "pricing": null,
+    "phone": "01892 826041",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:14.205Z"
+  },
+  {
+    "url": "https://www.hartleylandsfishery.co.uk/reservoir-lake",
+    "name": "Hartley Lands Fisher",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:15.927Z"
+  },
+  {
+    "url": "https://ashfordanglingsociety.co.uk/",
+    "name": "Ashford Angling Society",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:17.783Z"
+  },
+  {
+    "url": "https://khwp.org.uk/your-greenspaces/hilbert-woods/",
+    "name": "Kent High Weald",
+    "pricing": null,
+    "phone": null,
+    "email": "cmp@khwp.org.uk",
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:20.593Z"
+  },
+  {
+    "url": "https://www.shirkoakfarm.com/",
+    "name": null,
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": "Request failed with status code 403",
+    "scrapedAt": "2026-04-27T20:57:22.271Z"
+  },
+  {
+    "url": "https://www.hartleylandsfishery.co.uk/pear-tree-lake",
+    "name": "Hartley Lands Fisher",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:24.001Z"
+  },
+  {
+    "url": "https://www.official-cdaa.co.uk/",
+    "name": "Canterbury And Distr",
+    "pricing": null,
+    "phone": "01227 636724",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T20:57:25.825Z"
+  },
+  {
+    "url": "https://swsfisheries.co.uk/",
+    "name": null,
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": "Request failed with status code 403",
+    "scrapedAt": "2026-04-27T20:57:27.586Z"
+  }
+]
+[
+  {
+    "url": "https://www.ddaps.org/",
+    "name": "Home",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:04.193Z"
+  },
+  {
+    "url": "https://www.claypitfishery.co.uk/",
+    "name": "Clay pit fishery",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:06.036Z"
+  },
+  {
+    "url": "https://www.bewlwater.co.uk/activities/fishing/about/",
+    "name": "Bewl Water",
+    "pricing": [
+      "8 trout permit – £37.50",
+      "Full day boat hire for 1 angler – £32.50",
+      "Full day boat hire for 2-3 anglers – £50",
+      "Junior any method (under 18, allows 2 trout to be taken) – £20",
+      "2 trout take then catch & release – £32.50"
+    ],
+    "phone": "07767 375 115",
+    "email": "fishing@bewlwater.co.uk",
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:07.787Z"
+  },
+  {
+    "url": "https://thewillowsanglingcentre.co.uk/",
+    "name": "The Willows Angling Centre",
+    "pricing": null,
+    "phone": "01795-520887",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:09.599Z"
+  },
+  {
+    "url": "https://www.oaklakesfisheries.co.uk/",
+    "name": "OAK LAKES FISHERIES",
+    "pricing": [
+      "WELCOME TO OAK LAKES FISHERIES CARP | CATFISH | PIKE CARP | CATFISH | PIKE The Best Day Ticket Carp Fishing Lakes in Essex Day Tickets Available from £10.00",
+      "The Best Day Ticket Carp Fishing Lakes in Essex Day Tickets Available from £10.00",
+      "RAISED OVER £20,000 SO FAR Oak Lakes Fisheries are proud to support Blind Veterans UK by hosting an annual fishing match. The event is well attended with representatives from Blind Veterans UK and keen anglers.Keep an eye out for the publications regarding the next match.",
+      "RAISED OVER £20,000 SO FAR",
+      "s in Essex Day Tickets Available from £10.00"
+    ],
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:12.900Z"
+  },
+  {
+    "url": "https://www.explore-essex.com/places-to-go/find-whats-near-me/belhus-woods-country-park",
+    "name": "Explore Essex",
+    "pricing": [
+      "Up to one hour: £3.00",
+      "Up to two hours: £4.20",
+      "Up to four hours: £5.30",
+      "All day: £6.30",
+      "Discover the annual Explorer Pass from just over £1.63 a week to save on multiple visits at Belhus Woods and six other Essex Country Parks."
+    ],
+    "phone": "01708 865628",
+    "email": "Events.ExploreEssex@essex.gov.ukFor",
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:14.642Z"
+  },
+  {
+    "url": "https://www.bromley.gov.uk/sports-fishing-information/fishing-bromley",
+    "name": "London Borough of Bromley",
+    "pricing": [
+      "ng without one you could be fined up to £2"
+    ],
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:16.557Z"
+  },
+  {
+    "url": "https://www.hartleylandsfishery.co.uk/bramley-lake",
+    "name": "Hartley Lands Fisher",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:18.411Z"
+  },
+  {
+    "url": "https://www.parfishery.co.uk/",
+    "name": "Home",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:20.206Z"
+  },
+  {
+    "url": "https://kentwildfowlers.co.uk/homeframeintro.html",
+    "name": "The Kent Wildfowling & Conservation Association",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:22.530Z"
+  },
+  {
+    "url": "https://www.cranbrookanglingclub.co.uk/",
+    "name": "Cranbrook and District Angling Club / Carp fishing Kent",
+    "pricing": [
+      "OPEN for New Memberships Adults - £150.00 incl. workparty levy* & £30 joining fee Senior Citizens - £75 incl. £15 Joining Fee Intermediates (16-18) - £30.00 Juniors (under 16) - £15.00 or FREE with full paying adult Members Guest Tickets are available",
+      "Adults - £150.00 incl. workparty levy* & £30 joining fee",
+      "Senior Citizens - £75 incl. £15 Joining Fee",
+      "Intermediates (16-18) - £30.00",
+      "Juniors (under 16) - £15.00 or FREE with full paying adult"
+    ],
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:24.338Z"
+  },
+  {
+    "url": "https://thefirsfishery.com/",
+    "name": null,
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": "socket hang up",
+    "scrapedAt": "2026-04-27T21:08:25.985Z"
+  },
+  {
+    "url": "https://www.becmain.com/index.php?p=10",
+    "name": "Pea Lane",
+    "pricing": [
+      "Day tickets: £12.00 1 rod, £15.00 for 2 rods per person",
+      "(£20.00 for 3 rods bailiffs permission required).",
+      "£12.00",
+      "£15.00 for",
+      "£20.00 for"
+    ],
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:27.815Z"
+  },
+  {
+    "url": "https://www.woodys-fishing-lake.co.uk/",
+    "name": "Carp and catfish fishing lakes",
+    "pricing": [
+      "Join our members only lake for a annual membership fee of £70.00",
+      "£5.00 and then rod fees if fishing.)",
+      "1 x Rod - £7.50",
+      "2 x Rods - £15.00",
+      "3 x Rods - £22.50"
+    ],
+    "phone": "07555 640637",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:29.425Z"
+  },
+  {
+    "url": "https://www.ashbyfarms.com/",
+    "name": "Ashby Farms",
+    "pricing": null,
+    "phone": null,
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:33.644Z"
+  },
+  {
+    "url": "https://www.thameschase.org.uk/visitor-centres/dagenham-and-romford/bretons-outdoor-centre",
+    "name": "Thames Chase Community Forest",
+    "pricing": null,
+    "phone": "01708 434743",
+    "email": "parks@havering.gov.uk",
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:35.641Z"
+  },
+  {
+    "url": "https://www.springwoodfishery.co.uk/",
+    "name": "Springwood Fishery",
+    "pricing": null,
+    "phone": "07722610151",
+    "email": null,
+    "error": null,
+    "scrapedAt": "2026-04-27T21:08:37.469Z"
+  }
+]

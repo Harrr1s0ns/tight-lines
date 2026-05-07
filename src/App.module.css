@@ -1,0 +1,11 @@
+.shell {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg-page);
+  position: relative;
+}
+
+.main {
+  min-height: calc(100vh - var(--nav-height) - var(--bottom-nav-height));
+}

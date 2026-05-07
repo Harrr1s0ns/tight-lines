@@ -1,0 +1,107 @@
+.searchWrap {
+  padding: 12px 16px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.searchInputWrap { position: relative; }
+
+.searchIcon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-xl);
+  background: var(--bg-card);
+  font-size: 15px;
+  color: var(--text-primary);
+  outline: none;
+  font-family: 'Source Sans 3', sans-serif;
+  transition: border-color 0.15s;
+}
+
+.searchInput:focus { border-color: var(--green-400); }
+
+.content { padding: 16px; padding-bottom: 24px; }
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.sectionCount { font-size: 13px; color: var(--text-muted); }
+
+.list { display: flex; flex-direction: column; gap: 10px; }
+
+/* Card */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.1s;
+  cursor: pointer;
+}
+
+.card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.card:active { transform: scale(0.99); }
+
+.cardBody { padding: 14px 16px; }
+
+.cardTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.cardLatin { font-size: 13px; color: var(--text-muted); font-style: italic; }
+
+.cardDesc { font-size: 14px; color: var(--text-secondary); margin-top: 6px; line-height: 1.5; }
+
+.cardFooter {
+  padding: 8px 16px;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.baitTags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+.arrow { color: var(--text-muted); font-size: 16px; }
+
+/* Detail */
+.bodyText { font-size: 15px; color: var(--text-secondary); line-height: 1.65; }
+
+.baitTagsFull { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.baitTag {
+  background: var(--green-50);
+  border: 1px solid var(--green-200);
+  color: var(--green-700);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}

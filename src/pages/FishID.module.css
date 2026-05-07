@@ -1,0 +1,283 @@
+.hero {
+  background: var(--green-800);
+  padding: 24px 16px 28px;
+  color: var(--green-50);
+}
+
+.heroTitle {
+  font-size: 26px;
+  color: var(--green-50);
+  margin-bottom: 4px;
+}
+
+.heroSub {
+  font-size: 14px;
+  color: var(--green-300);
+}
+
+.body {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.photoArea {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 2px dashed var(--border-strong);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s;
+}
+
+.photoArea:hover {
+  border-color: var(--green-400);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.photoIcon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.photoHint {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.analysingOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 46, 26, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--green-100);
+  font-size: 15px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: var(--green-300);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.captureBtn {
+  width: 100%;
+  background: var(--green-600);
+  color: var(--green-50);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.captureBtn:hover,
+.captureBtn:active {
+  background: var(--green-500);
+}
+
+.analysisNote {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.errorCard {
+  background: var(--red-100);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.errorText {
+  color: var(--red-500);
+  font-size: 14px;
+  text-align: center;
+}
+
+.retryBtn {
+  background: var(--red-500);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.resultCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.resultHeader {
+  background: var(--green-800);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.speciesName {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--green-50);
+}
+
+.confidence {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.confHigh  { background: var(--green-100); color: var(--green-700); }
+.confMedium { background: var(--amber-100); color: var(--amber-500); }
+.confLow   { background: var(--red-100); color: var(--red-500); }
+
+.statsRow {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.stat {
+  flex: 1;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.statValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.resultNotes {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+.resultActions {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logBtn {
+  width: 100%;
+  background: var(--green-600);
+  color: var(--green-50);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.logBtn:hover,
+.logBtn:active {
+  background: var(--green-500);
+}
+
+.loggedBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--green-100);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-700);
+}
+
+.viewCollectionBtn {
+  background: none;
+  border: none;
+  color: var(--water-500);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.retakeBtn {
+  width: 100%;
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 11px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.retakeBtn:hover,
+.retakeBtn:active {
+  background: var(--bg-surface);
+}

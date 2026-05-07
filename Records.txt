@@ -1,0 +1,57 @@
+Coarse Fish Records as at 30th January 2026
+© British Record (Rod Caught) Fish Committee 2026
+
+lbs ozs dms kilos,gms Year Captor Location
+BARBEL (Barbus barbus)
+22 1 0 10.014 2025 Simon Baker, King’s Weir, River Lea.
+BITTERLING (Rhodeus sericeus)
+0 0 12 0.021 1998 Dennis Flack, Barway Lake, Cambridgeshire
+BLEAK (Alburnus alburnus)
+0 4 9 0 .129 1998 Dennis Flack, River Lark, Cambridgeshire
+BREAM (Common Bronze) (Abramis brama)
+22 11 0 10 .291 2012 Scot Crook, Ferry Lagoon, Cambridgeshire.
+BREAM (Silver) (Blicca bjoerkna)
+3 4 0 1. 474 2012 Gareth Evans, Mill Farm Fishery, Pullborough, Sussex
+BULLHEAD (Miller's Thumb) (Cottus gobio)
+0 1 0 .028 1983 R Johnson, Green River, Nr Guildford, Surrey
+CARP (Mirror) (Cyprinus carpio)
+68 1 0 30 .875 2016 Dean Fletcher, Cranwell’s Lake, Wasing Estate, Berks.
+CARP (Crucian) (Carassius carassius)
+4 14 0 2.212 2024 Adam Brookbanks Barham Syndicate Lake, Ipswich
+CATFISH (Wels) (Silurus glanis)
+150 03 0 68.12 2024 Shaun Ing Chigborough Fisheries, Essex
+CHUB (Leuciscus cephalus)
+9 5 0 4 . 224 2007 Andy Maker, Southern Stillwater.
+DACE (Leuciscus leuciscus)
+1 5 2 0 . 599 2002 Simon Ashton, River Wear, Sunderland, Tyne & Wear.
+EEL (Anguilla anguilla)
+11 3 0 5 .074 2024 Steven Ricketts, Southern stillwater.
+GUDGEON (Gobio gobio)
+0 5 0 0. 141 1990 D H Hull, River Nadder, Sutton Mandeville, Wiltshire.
+IDE (or ORFE) (Leuciscus idus)
+8 5 0 3.770 2000 Michael Wilkinson, Lymm Vale, Cheshire
+8 5 0 3.770 2018 Lawrence King Newdigate Farms, Surrey
+8 5 0 3.770 2021 Colin Hebb River Hull
+MINNOW (Phoxinus phoxinus)
+0 0 13.5 0 .024 1998 J Sawyer, Whitworth Lake, Spennymoor
+PERCH (Perca fluviatilis)
+6 3 0 2 .806 2011 Neil Stephen, Stream Valley Lakes, Crowborough, Sussex.
+6 3 0 2 .806 2011 Ken Brown, Willstone Fishery, Tring, Hertfordshire.
+PIKE (Esox lucius)
+47 05 0 21 .46 2024 Lloyd Watson, Chew Valley Lake, Somerset.
+ROACH (Rutilus rutilus)
+4 3 0 1.9 2006 Keith Berry, Stillwater, Northern Ireland.
+4 3 0 1.9 2024 Dai Gribble Linear Fisheries, Oxfordshire
+RUDD (Scardinius erythrophthalmus)
+4 10 0 2 .097 2001 Simon Parry, Freshwater Lake, Co Armagh, N.Ireland.
+4 10 0 2 .097 2001 Simon Parry, Clay Lake, Co Armagh, N.Ireland
+RUFFE (Gymnocephalus cernuus)
+0 5 4 0 .148 1980 R J Jenkins, West View Farm, Cumbria
+STICKLEBACK (3-spined) (Gasterosteus aculaeatus)
+8 grams 2019 Mat Faulkner, Lower Beauvale Ponds, Nottinghamshire.
+STONE LOACH (Barbatula barbatula)
+- - - 0 . 013 2005 Geoffrey Green, Windmill Fishery, Bristol, Avon.
+TENCH (Tinca tinca)
+15 3 6 6. 899 2001 D Ward: Private Fishery, Staines, Surrey,
+ZANDER (Pikeperch) (Sander lucioperca)
+21 5 0 9. 667 2007 James Benfield, Upper Load Lock, R Severn, Tewksbury, Glos.

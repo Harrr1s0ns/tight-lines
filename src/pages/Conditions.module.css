@@ -1,0 +1,132 @@
+.page { min-height: calc(100vh - var(--nav-height) - var(--bottom-nav-height)); }
+
+.content { padding: 16px; padding-bottom: 24px; }
+
+/* Season */
+.seasonCard {
+  background: var(--green-700);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.seasonEmoji { font-size: 36px; flex-shrink: 0; line-height: 1; }
+
+.seasonTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--green-100);
+  margin-bottom: 6px;
+}
+
+.seasonDesc { font-size: 13px; color: rgba(255,255,255,0.78); line-height: 1.5; }
+
+.tipsList { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+
+.tipRow {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.tipArrow { color: var(--green-500); font-weight: 700; flex-shrink: 0; }
+
+.bestSpecies { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.speciesBadge {
+  background: var(--green-100);
+  color: var(--green-700);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Temp cards */
+.tempCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  margin-bottom: 8px;
+}
+
+.tempHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.tempSpecies { font-weight: 600; font-size: 15px; color: var(--text-primary); }
+
+.tempBadge {
+  background: var(--water-50);
+  color: var(--water-700);
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tempBar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.tempBarFill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--water-400), var(--green-400), var(--amber-500));
+}
+
+.tempNote { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+/* Wind */
+.windGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.windCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+}
+
+.windDir {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--green-700);
+  margin-bottom: 6px;
+}
+
+.windEffect { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 6px; }
+
+.windCarpNote { font-size: 11px; color: var(--text-muted); line-height: 1.4; font-style: italic; }
+
+/* Pressure */
+.pressureCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  margin-bottom: 8px;
+}
+
+.pressureTitle { font-weight: 600; font-size: 15px; color: var(--text-primary); margin-bottom: 6px; }
+
+.pressureEffect { font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 6px; }
+
+.pressureRec { font-size: 14px; font-weight: 600; color: var(--green-700); }

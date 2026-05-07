@@ -1,0 +1,183 @@
+.page { min-height: calc(100vh - var(--nav-height) - var(--bottom-nav-height)); }
+
+.hero {
+  background: linear-gradient(160deg, var(--green-800) 0%, var(--water-700) 100%);
+  padding: 24px 16px 28px;
+}
+
+.heroGreeting {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.heroTitle {
+  font-size: 28px;
+  color: var(--green-100);
+  margin-bottom: 8px;
+}
+
+.heroDesc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.5;
+}
+
+.content {
+  padding: 16px;
+  padding-bottom: 24px;
+}
+
+.sectionLabel {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+/* Season card */
+.seasonCard {
+  background: var(--green-700);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin-bottom: 4px;
+}
+
+.seasonCard:hover { opacity: 0.92; }
+
+.seasonEmoji { font-size: 32px; flex-shrink: 0; line-height: 1; }
+
+.seasonTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--green-100);
+  margin-bottom: 4px;
+}
+
+.seasonDesc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+}
+
+/* Quick grid */
+.quickGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.quickCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 16px 14px;
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.1s;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+}
+
+.quickCard:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.quickCard:active { transform: scale(0.98); }
+
+.quickIcon { font-size: 28px; margin-bottom: 8px; display: block; line-height: 1; }
+
+.quickTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.quickSub { font-size: 12px; color: var(--text-muted); }
+
+/* Bait cards */
+.baitList { display: flex; flex-direction: column; gap: 8px; }
+
+.baitCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+}
+
+.baitTitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.baitDesc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Licence link */
+.licenceCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green-700);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.1s;
+  box-shadow: var(--shadow-sm);
+}
+
+.licenceCard:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.licenceCard:active { transform: scale(0.98); }
+
+.licenceText { flex: 1; }
+
+.licenceTitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.licenceSub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.licenceArrow {
+  font-size: 20px;
+  color: var(--green-700);
+  flex-shrink: 0;
+}
+
+/* Swim Booker link */
+.swimBookerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid #2563eb;
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.1s;
+  box-shadow: var(--shadow-sm);
+}
+
+.swimBookerCard:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.swimBookerCard:active { transform: scale(0.98); }

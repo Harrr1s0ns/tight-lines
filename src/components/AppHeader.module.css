@@ -1,0 +1,77 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--green-800);
+  padding-top: env(safe-area-inset-top, 0px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.headerContent {
+  padding: 0 16px;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--green-100);
+  letter-spacing: 0.01em;
+}
+
+.accent {
+  color: var(--green-300);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.searchBtn {
+  background: none;
+  border: none;
+  color: var(--green-200);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 12px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  line-height: 1;
+}
+
+.searchBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  color: var(--green-200);
+  font-size: 22px;
+  cursor: pointer;
+  padding: 12px 10px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.menuBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
