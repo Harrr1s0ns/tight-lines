@@ -5,6 +5,14 @@ import { tackleShops } from '../data/tackleShops';
 import { Badge, DetailSection, BackButton, DetailHero, InfoRow, EmptyState } from '../components/UI';
 import styles from './Lakes.module.css';
 
+const CUSTOM_KEY = 'tightlines_custom_lakes';
+function loadCustomLakes() {
+  try { return JSON.parse(localStorage.getItem(CUSTOM_KEY) || '[]'); } catch { return []; }
+}
+function saveCustomLakes(arr) {
+  localStorage.setItem(CUSTOM_KEY, JSON.stringify(arr));
+}
+
 function haversineKm(lat1, lng1, lat2, lng2) {
   const R = 6371;
   const dLat = ((lat2 - lat1) * Math.PI) / 180;
@@ -119,7 +127,7 @@ function getFishingInsights(weather) {
   return insights;
 }
 
-function LakeDetail({ lake, onBack }) {
+function LakeDetail({ lake, onBack, onDelete }) {
   const lakeSwims = swims.filter((s) => s.lakeId === lake.id);
   const isClub = lake.isClubWater;
 
@@ -315,6 +323,14 @@ function LakeDetail({ lake, onBack }) {
 
       <NearestShops lake={lake} />
 
+      {lake.isCustom && onDelete && (
+        <div style={{ padding: '0 16px 24px' }}>
+          <button className={styles.deleteLakeBtn} onClick={() => { if (window.confirm('Delete this lake?')) onDelete(lake.id); }}>
+            Delete this lake
+          </button>
+        </div>
+      )}
+
       <DetailSection title="Book Online">
         <a
           href="https://www.swimbooker.com"
@@ -334,19 +350,154 @@ function LakeDetail({ lake, onBack }) {
   );
 }
 
+function AddLakeForm({ onSave, onCancel }) {
+  const [form, setForm] = useState({
+    name: '', location: '', address: '', description: '',
+    type: 'dayticket', costToFish: '', species: '',
+    phone: '', website: '', facilities: '', notes: '',
+    lat: '', lng: '',
+  });
+
+  function set(field, value) {
+    setForm((f) => ({ ...f, [field]: value }));
+  }
+
+  function handleSave() {
+    if (!form.name.trim()) return;
+    const lake = {
+      id: 'custom-' + Date.now(),
+      isCustom: true,
+      name: form.name.trim(),
+      location: form.location.trim() || 'Unknown location',
+      address: form.address.trim() || null,
+      postcode: null,
+      description: form.description.trim() || '',
+      locationNotes: '',
+      accessNotes: '',
+      bestTimes: '',
+      isClubWater: form.type === 'club',
+      isNonClubWater: form.type === 'dayticket',
+      clubName: null,
+      costToFish: form.costToFish.trim() || null,
+      species: form.species ? form.species.split(',').map((s) => s.trim()).filter(Boolean) : [],
+      contactDetails: {
+        phone: form.phone.trim() || null,
+        email: null,
+        website: form.website.trim() || null,
+      },
+      facilities: form.facilities ? form.facilities.split(',').map((s) => s.trim()).filter(Boolean) : [],
+      rules: [],
+      notes: form.notes.trim() || null,
+      lat: form.lat ? parseFloat(form.lat) : null,
+      lng: form.lng ? parseFloat(form.lng) : null,
+    };
+    onSave(lake);
+  }
+
+  return (
+    <div className="page-enter">
+      <div className={styles.formHeader}>
+        <button className={styles.formBack} onClick={onCancel}>‹ Back</button>
+        <h2 className={styles.formTitle}>Add a Lake</h2>
+      </div>
+      <div className={styles.formBody}>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Lake name *</label>
+          <input className={styles.formInput} placeholder="e.g. Hidden Carp Lake" value={form.name} onChange={(e) => set('name', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Location</label>
+          <input className={styles.formInput} placeholder="e.g. Deal, Kent" value={form.location} onChange={(e) => set('location', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Address</label>
+          <input className={styles.formInput} placeholder="Street address (optional)" value={form.address} onChange={(e) => set('address', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Description</label>
+          <textarea className={styles.formTextarea} placeholder="Brief description of the lake…" value={form.description} onChange={(e) => set('description', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Type</label>
+          <div className={styles.formToggle}>
+            <button className={`${styles.toggleBtn} ${form.type === 'dayticket' ? styles.toggleActive : ''}`} onClick={() => set('type', 'dayticket')}>Day Ticket</button>
+            <button className={`${styles.toggleBtn} ${form.type === 'club' ? styles.toggleActive : ''}`} onClick={() => set('type', 'club')}>Club Water</button>
+          </div>
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Cost to fish</label>
+          <input className={styles.formInput} placeholder="e.g. £10/day" value={form.costToFish} onChange={(e) => set('costToFish', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Species (comma-separated)</label>
+          <input className={styles.formInput} placeholder="e.g. Carp, Tench, Roach" value={form.species} onChange={(e) => set('species', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Phone</label>
+          <input className={styles.formInput} placeholder="Contact number" value={form.phone} onChange={(e) => set('phone', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Website</label>
+          <input className={styles.formInput} placeholder="https://…" value={form.website} onChange={(e) => set('website', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Facilities (comma-separated)</label>
+          <input className={styles.formInput} placeholder="e.g. Toilets, Car park, Cafe" value={form.facilities} onChange={(e) => set('facilities', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Notes</label>
+          <input className={styles.formInput} placeholder="Any other info…" value={form.notes} onChange={(e) => set('notes', e.target.value)} />
+        </div>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel}>Coordinates (optional — needed for live weather)</label>
+          <div className={styles.formRow}>
+            <input className={styles.formInput} placeholder="Latitude e.g. 51.2415" value={form.lat} onChange={(e) => set('lat', e.target.value)} />
+            <input className={styles.formInput} placeholder="Longitude e.g. 1.3502" value={form.lng} onChange={(e) => set('lng', e.target.value)} />
+          </div>
+        </div>
+        <button className={styles.formSaveBtn} onClick={handleSave} disabled={!form.name.trim()}>
+          Save Lake
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function Lakes({ initialSelected = null }) {
   const [filter, setFilter] = useState('all');
   const [selected, setSelected] = useState(initialSelected);
+  const [addingLake, setAddingLake] = useState(false);
+  const [customLakes, setCustomLakes] = useState(loadCustomLakes);
+
+  const allLakes = [...lakes, ...customLakes];
 
   const filtered =
     filter === 'club'
-      ? lakes.filter((l) => l.isClubWater)
+      ? allLakes.filter((l) => l.isClubWater)
       : filter === 'dayticket'
-      ? lakes.filter((l) => l.isNonClubWater)
-      : lakes;
+      ? allLakes.filter((l) => l.isNonClubWater)
+      : allLakes;
+
+  function handleSaveCustomLake(lake) {
+    const updated = [...customLakes, lake];
+    saveCustomLakes(updated);
+    setCustomLakes(updated);
+    setAddingLake(false);
+  }
+
+  function handleDeleteCustomLake(id) {
+    const updated = customLakes.filter((l) => l.id !== id);
+    saveCustomLakes(updated);
+    setCustomLakes(updated);
+    setSelected(null);
+  }
+
+  if (addingLake) {
+    return <AddLakeForm onSave={handleSaveCustomLake} onCancel={() => setAddingLake(false)} />;
+  }
 
   if (selected) {
-    return <LakeDetail lake={selected} onBack={() => setSelected(null)} />;
+    return <LakeDetail lake={selected} onBack={() => setSelected(null)} onDelete={handleDeleteCustomLake} />;
   }
 
   return (
@@ -382,6 +533,10 @@ export default function Lakes({ initialSelected = null }) {
             ))}
           </div>
         )}
+
+        <button className={styles.addLakeBtn} onClick={() => setAddingLake(true)}>
+          + Add a lake
+        </button>
       </div>
     </div>
   );

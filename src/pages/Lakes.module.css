@@ -323,3 +323,166 @@
 }
 
 .bookingArrow { font-size: 20px; color: var(--text-muted); }
+
+/* Add lake button */
+.addLakeBtn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background: transparent;
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.addLakeBtn:hover {
+  border-color: var(--green-500);
+  color: var(--green-700);
+  background: var(--green-50);
+}
+
+/* Delete lake button */
+.deleteLakeBtn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #ef4444;
+  border-radius: var(--radius-lg);
+  color: #ef4444;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.deleteLakeBtn:hover { background: #fef2f2; }
+
+/* Add lake form */
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-surface);
+}
+
+.formBack {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.formTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.formBody {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formLabel {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.formInput {
+  padding: 11px 13px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.formInput:focus { border-color: var(--green-500); }
+
+.formTextarea {
+  padding: 11px 13px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 15px;
+  outline: none;
+  resize: vertical;
+  min-height: 90px;
+  font-family: inherit;
+  transition: border-color 0.15s;
+}
+
+.formTextarea:focus { border-color: var(--green-500); }
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.formToggle {
+  display: flex;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 10px;
+  background: var(--bg-card);
+  border: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.toggleBtn + .toggleBtn { border-left: 1px solid var(--border-strong); }
+
+.toggleActive {
+  background: var(--green-700);
+  color: var(--green-100);
+}
+
+.formSaveBtn {
+  padding: 15px;
+  background: var(--green-700);
+  border: none;
+  border-radius: var(--radius-lg);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.formSaveBtn:disabled { opacity: 0.4; cursor: not-allowed; }
