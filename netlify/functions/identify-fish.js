@@ -60,7 +60,20 @@ Use imperial units (inches, lb oz). Be specific — don't say 'various sizes'.`;
 
   if (!geminiRes.ok) {
     const errText = await geminiRes.text();
-    return { statusCode: 502, body: JSON.stringify({ error: 'Gemini API error', detail: errText }) };
+    let userMessage = 'Gemini API error';
+    let quotaInfo = null;
+    try {
+      const errJson = JSON.parse(errText);
+      userMessage = errJson?.error?.message || userMessage;
+      const violations = errJson?.error?.details?.find(d => d['@type']?.includes('QuotaFailure'))?.violations;
+      if (violations?.length) {
+        quotaInfo = violations.map(v => v.quotaId || v.quotaMetric).filter(Boolean).join(', ');
+      }
+    } catch { /* leave defaults */ }
+    return {
+      statusCode: geminiRes.status,
+      body: JSON.stringify({ error: userMessage, quotaInfo, detail: errText }),
+    };
   }
 
   const geminiData = await geminiRes.json();

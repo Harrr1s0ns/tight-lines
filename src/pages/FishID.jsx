@@ -76,9 +76,7 @@ export default function FishID({ onNavigateToCollection }) {
         }
         if (!res.ok) {
           let msg = data.error || 'Unknown error';
-          if (data.detail) {
-            try { msg = JSON.parse(data.detail)?.error?.message || msg; } catch { msg = data.detail; }
-          }
+          if (data.quotaInfo) msg += ` (quota: ${data.quotaInfo})`;
           throw new Error(msg);
         }
         setResult(data);
