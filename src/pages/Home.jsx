@@ -42,7 +42,7 @@ export default function Home({ onNavigate }) {
       {/* Hero */}
       <div className={styles.hero}>
         <div className={styles.heroGreeting}>Your Fishing Guide</div>
-        <h1 className={styles.heroTitle}>Good fishing, Dad 🎣</h1>
+        <h1 className={styles.heroTitle}>Good fishing 🎣</h1>
         <p className={styles.heroDesc}>Kent waters, UK species, and conditions — all in one place.</p>
       </div>
 
