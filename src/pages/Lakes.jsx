@@ -314,6 +314,22 @@ function LakeDetail({ lake, onBack }) {
       )}
 
       <NearestShops lake={lake} />
+
+      <DetailSection title="Book Online">
+        <a
+          href="https://www.swimbooker.com"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.bookingCard}
+        >
+          <span style={{ fontSize: 28, flexShrink: 0 }}>📍</span>
+          <div className={styles.bookingText}>
+            <div className={styles.bookingTitle}>Swim Booker</div>
+            <div className={styles.bookingSub}>swimbooker.com — book fishing swims online</div>
+          </div>
+          <span className={styles.bookingArrow}>›</span>
+        </a>
+      </DetailSection>
     </div>
   );
 }

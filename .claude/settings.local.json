@@ -55,7 +55,8 @@
       "Bash(xargs grep -l \"collection\\\\|Collection\")",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Harrisons PC\\\\OneDrive\\\\Desktop\\\\tight-lines\" -Force)",
       "Bash(Select-Object Name, PSIsContainer)",
-      "WebFetch(domain:www.cottingtonlakes.co.uk)"
+      "WebFetch(domain:www.cottingtonlakes.co.uk)",
+      "Bash(findstr *)"
     ]
   }
 }
