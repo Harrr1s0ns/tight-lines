@@ -20,7 +20,7 @@ exports.handler = async function (event) {
     return { statusCode: 400, body: JSON.stringify({ error: 'Missing imageBase64 or mimeType' }) };
   }
 
-  const prompt = `You are an expert UK freshwater and sea fishing guide. Examine this photo carefully.
+  const prompt = `You are an expert UK freshwater and sea fishing guide. Examine this photo carefully and identify the fish.
 Respond with ONLY a valid JSON object — no markdown, no explanation, just the JSON.
 Format:
 {
@@ -30,7 +30,12 @@ Format:
   "confidence": "high" | "medium" | "low",
   "notes": "One sentence of useful detail about this fish or catch"
 }
-If you cannot see a fish clearly, set species to "Unknown" and confidence to "low".
+Confidence rules:
+- "high": you can clearly see the fish and are certain of the species
+- "medium": the fish is visible but there is some uncertainty (angle, partial view, similar-looking species)
+- "low": the fish is obscured, out of frame, or genuinely unidentifiable
+If a fish is clearly visible, use "high" or "medium" — do not default to "low" out of caution.
+Only set species to "Unknown" if there is truly no fish visible or it is completely unidentifiable.
 Use imperial units (inches, lb oz). Be specific — don't say 'various sizes'.`;
 
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
