@@ -50,7 +50,7 @@ Use imperial units (inches, lb oz). Be specific — don't say 'various sizes'.`;
         ],
       },
     ],
-    generationConfig: { temperature: 0.1, maxOutputTokens: 256 },
+    generationConfig: { temperature: 0.1, maxOutputTokens: 1024, thinkingConfig: { thinkingBudget: 0 } },
   };
 
   let geminiRes;
