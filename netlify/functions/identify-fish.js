@@ -20,7 +20,7 @@ exports.handler = async function (event) {
     return { statusCode: 400, body: JSON.stringify({ error: 'Missing imageBase64 or mimeType' }) };
   }
 
-  const prompt = `You are an expert UK freshwater and sea fishing guide. Examine this photo carefully and identify the fish.
+  const prompt = `You are an expert UK freshwater and sea fishing guide. The photo may show an angler holding a fish, a fish on a bank, or a close-up — all are valid. Find the fish in the image and identify it.
 Respond with ONLY a valid JSON object — no markdown, no explanation, just the JSON.
 Format:
 {
@@ -31,11 +31,12 @@ Format:
   "notes": "One sentence of useful detail about this fish or catch"
 }
 Confidence rules:
-- "high": you can clearly see the fish and are certain of the species
-- "medium": the fish is visible but there is some uncertainty (angle, partial view, similar-looking species)
-- "low": the fish is obscured, out of frame, or genuinely unidentifiable
-If a fish is clearly visible, use "high" or "medium" — do not default to "low" out of caution.
-Only set species to "Unknown" if there is truly no fish visible or it is completely unidentifiable.
+- "high": you can identify the species with certainty from visible features (body shape, fins, colouring, markings)
+- "medium": the fish is visible but partially obscured, at an awkward angle, or could be one of two similar species
+- "low": the fish is too small, blurry, or hidden to make a reasonable identification
+The fish does not need to fill the frame — anglers holding fish is normal. Focus on the fish itself.
+If a fish is identifiable, use "high" or "medium". Only use "low" if identification is genuinely not possible.
+Only set species to "Unknown" if there is no fish visible at all.
 Use imperial units (inches, lb oz). Be specific — don't say 'various sizes'.`;
 
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
