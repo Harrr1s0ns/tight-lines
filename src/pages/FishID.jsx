@@ -56,7 +56,7 @@ export default function FishID({ onNavigateToCollection }) {
       setLogged(false);
       setResult(null);
 
-      const compressed = await compressImage(rawDataUrl);
+      const compressed = await compressImage(rawDataUrl, 1920, 0.92);
       compressedPhotoRef.current = compressed;
       const base64 = compressed.split(',')[1];
       const mimeType = 'image/jpeg';
