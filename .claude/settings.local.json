@@ -52,7 +52,10 @@
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Harrisons PC\\\\OneDrive\\\\Desktop\\\\tight-lines\" -Recurse -Force)",
       "Bash(Select-Object FullName)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Harrisons PC\\\\OneDrive\\\\Desktop\\\\tight-lines\" -Recurse -Depth 2)",
-      "Bash(xargs grep -l \"collection\\\\|Collection\")"
+      "Bash(xargs grep -l \"collection\\\\|Collection\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Harrisons PC\\\\OneDrive\\\\Desktop\\\\tight-lines\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "WebFetch(domain:www.cottingtonlakes.co.uk)"
     ]
   }
 }
